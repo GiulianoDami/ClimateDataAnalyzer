@@ -18,7 +18,7 @@ def identify_trend(dataframe, column_name):
     if column_name not in dataframe.columns:
         raise ValueError(f"Column {column_name} not found in dataframe")
     trend = dataframe[column_name].diff().mean()
-    return "increasing" if trend > 0 else "decreasing" if trend < 0 else "stable"
+    return "Increasing" if trend > 0 else "Decreasing" if trend < 0 else "No Trend"
 
 def generate_report(dataframe, column_name):
     average = calculate_average(dataframe, column_name)
