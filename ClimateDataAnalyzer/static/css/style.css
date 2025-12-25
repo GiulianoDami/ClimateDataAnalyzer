@@ -34,9 +34,9 @@ header ul {
 }
 
 header li {
-    float: left;
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 0;
+    float: left;
 }
 
 header #branding {
@@ -53,11 +53,26 @@ header nav {
 }
 
 section {
-    clear: both;
     padding: 20px 0;
 }
 
-button, input[type="submit"] {
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.upload-form {
+    margin-bottom: 20px;
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
     background-color: #e8491d;
     color: white;
     padding: 10px 20px;
@@ -66,32 +81,21 @@ button, input[type="submit"] {
     text-transform: uppercase;
 }
 
-button:hover, input[type="submit"]:hover {
-    background-color: #c43e01;
+button:hover {
+    background-color: #c43c22;
 }
 
-.upload-form {
-    margin-bottom: 20px;
+.analysis-results {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.data-analysis-options {
-    margin-bottom: 20px;
+.report-section {
+    margin-top: 20px;
 }
 
-.report-generation {
-    margin-bottom: 20px;
-}
-
-.visualizations {
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.chart-container {
+    margin-top: 20px;
 }
